@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from retry import retry
 import pandas as pd
 
+
 load_dotenv()
 
 # Constants
