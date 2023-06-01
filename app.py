@@ -1,3 +1,4 @@
+import os
 import requests
 from dotenv import load_dotenv
 from retry import retry
@@ -44,5 +45,17 @@ texts = ["How do I get a replacement Medicare card?",
         "Will my Medicare premiums be higher because of my higher income?",
         "What is TRICARE ?",
         "Should I sign up for Medicare Part B if I have Veterans’ Benefits?"]
+
+# get embeddings for each text
+output = get_embeddings(texts)
+
+embeddings = pd.DataFrame(output)
+print(embeddings)
+
+embeddings.to_csv("embeddings.csv", index=False)
+
+
+
+
 
 
