@@ -33,9 +33,10 @@ python app.py
 ```
 
 ## References
+- [Getting Started with Embeddings](https://huggingface.co/blog/getting-started-with-embeddings)
+- [Supabase Vector Kit](https://supabase.com/vector)
 - [Sentence Transformer](https://huggingface.co/sentence-transformers)
-- [Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/understanding-search-and-language-models)
-- [Google Cloud Blog](https://cloud.google.com/blog/products/ai-machine-learning/what-are-embeddings-and-why-do-we-need-them)
+- [Sentence Transformer Documentation](https://www.sbert.net/index.html)
 
 ## Author
 - [Joel Mwanja](https://github.com/mwanjajoel)
