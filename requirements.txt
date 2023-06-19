@@ -43,7 +43,7 @@ tokenizers==0.13.3
 torch==1.13.1
 torchvision==0.14.1
 tqdm==4.65.0
-transformers==4.29.2
+transformers==4.30.0
 typing_extensions==4.6.2
 urllib3==2.0.2
 xxhash==3.2.0
