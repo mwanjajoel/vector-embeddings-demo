@@ -55,12 +55,13 @@ texts = ["How do I get a replacement Medicare card?",
 
 # get embeddings for each text
 output = get_embeddings(texts)
+# print("The embeddings", output)
 
 embeddings = pd.DataFrame(output)
 
 # TO-DO
 # Save embeddings in a postgres database
-embeddings.to_csv("embeddings.csv", index=False)
+embeddings.to_csv("data/embeddings.csv", index=False)
 
 # Load embeddings from huggingface datasets
 faq_embeddings = load_dataset("codebender/faq-vector-embeddings")
@@ -70,14 +71,14 @@ embeddings = torch.from_numpy(
     faq_embeddings["train"].to_pandas().to_numpy()).to(torch.float)
 
 # get embeddings for a user query
-question = ["How can Medicare help me?"]
+question = ["How much should I pay?"]
 output = get_embeddings(question)
 
 # query embeddings
 query_embeddings = torch.FloatTensor(output)
 
 # get the top 5 results from the semantic search
-hits = semantic_search(query_embeddings, embeddings, top_k=5)
+hits = semantic_search(query_embeddings, embeddings, top_k=1)
 print(hits)
 
 # print the results
