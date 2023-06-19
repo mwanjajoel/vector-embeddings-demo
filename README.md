@@ -32,11 +32,17 @@ pip install -r requirements.txt
 python app.py
 ```
 
+4. Run the LangChain version
+```
+python chat.py
+```
+
 ## References
 - [Getting Started with Embeddings](https://huggingface.co/blog/getting-started-with-embeddings)
 - [Supabase Vector Kit](https://supabase.com/vector)
 - [Sentence Transformer](https://huggingface.co/sentence-transformers)
 - [Sentence Transformer Documentation](https://www.sbert.net/index.html)
+- [LangChain](https://python.langchain.com/docs/get_started)
 
 ## Author
 - [Joel Mwanja](https://github.com/mwanjajoel)
